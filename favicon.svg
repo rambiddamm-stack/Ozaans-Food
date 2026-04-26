@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#B8001F"/>
+      <stop offset="100%" stop-color="#7a0015"/>
+    </radialGradient>
+    <radialGradient id="shine" cx="40%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#bg)" stroke="#FFD700" stroke-width="3"/>
+  <circle cx="50" cy="50" r="48" fill="url(#shine)"/>
+  <!-- FC letters -->
+  <text x="50" y="42" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#FFD700" text-anchor="middle" letter-spacing="2">FC</text>
+  <!-- Tagline -->
+  <text x="50" y="60" font-family="Arial, sans-serif" font-size="7" fill="#ffffff" text-anchor="middle" letter-spacing="1">FOODS</text>
+  <text x="50" y="70" font-family="Arial, sans-serif" font-size="7" fill="#ffffff" text-anchor="middle" letter-spacing="1">CARNIVAL</text>
+  <!-- Small flame decorations -->
+  <text x="22" y="55" font-size="12" text-anchor="middle">🍕</text>
+  <text x="78" y="55" font-size="12" text-anchor="middle">🍔</text>
+</svg>
