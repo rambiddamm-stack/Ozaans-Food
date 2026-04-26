@@ -1,0 +1,20 @@
+{
+  "name": "Foods Carnival",
+  "short_name": "FoodsCarnival",
+  "description": "Fast Food & Refreshment Point - Order Online",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#B8001F",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "lifestyle"],
+  "lang": "en-PK"
+}
