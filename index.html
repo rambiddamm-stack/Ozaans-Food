@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#B8001F" />
+  <meta name="description" content="Foods Carnival — Fast Food & Refreshment Point. Order online from Wah Cantt. Pizza, Burgers, Wraps, Deals & more. Call/WhatsApp: 0316-4640160" />
+  <meta name="keywords" content="foods carnival, fast food wah cantt, pizza, burgers, wraps, deals, online order" />
+  <meta name="author" content="Foods Carnival" />
+  <meta property="og:title" content="Foods Carnival — Order Online" />
+  <meta property="og:description" content="Fast Food & Refreshment Point. Pizza, Burgers, Wraps & Deals. Wah Cantt." />
+  <meta property="og:type" content="restaurant.restaurant" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Foods Carnival" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <!-- Fonts with display=swap for slow connections -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Foods Carnival — Fast Food & Refreshment Point | Wah Cantt</title>
+</head>
+<body>
+
+<!-- Skip Navigation (Accessibility) -->
+<a href="#menu-section" class="skip-link">Skip to Menu</a>
+
+<!-- Offline Banner -->
+<div id="offline-banner" class="offline-banner" role="alert" aria-live="assertive">
+  <span>📡</span> You're offline — Menu still available!
+</div>
+
+<!-- ─── HEADER ─────────────────────────────────────────────── -->
+<header class="site-header" role="banner">
+  <a href="#" class="logo-wrap" aria-label="Foods Carnival Home">
+    <div class="logo-icon">
+      <img src="favicon.svg" alt="Foods Carnival Logo" width="44" height="44"
+        loading="eager" decoding="async" />
+    </div>
+    <div class="logo-text">
+      <span class="logo-name" aria-label="Foods Carnival">FOODS CARNIVAL</span>
+      <span class="logo-sub" aria-hidden="true">Fast Food &amp; Refreshment</span>
+    </div>
+  </a>
+
+  <nav class="header-actions" role="navigation" aria-label="Site actions">
+    <button id="search-btn" class="btn-search" aria-label="Search menu (press /)">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+    </button>
+    <button id="cart-btn" class="cart-btn" aria-label="Open cart" aria-haspopup="dialog">
+      <span class="cart-icon" aria-hidden="true">🛒</span>
+      <span class="cart-label">Cart</span>
+      <span id="cart-count" class="cart-count" aria-live="polite" aria-label="items in cart">0</span>
+    </button>
+  </nav>
+</header>
+
+<!-- ─── SEARCH OVERLAY ────────────────────────────────────── -->
+<div id="search-overlay" class="search-overlay" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="search-box" role="search">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+      <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+    </svg>
+    <input id="search-input" type="search" placeholder="Search pizza, burgers, deals…"
+      aria-label="Search menu items" autocomplete="off" autocorrect="off" spellcheck="false" />
+    <button id="search-close-btn" class="search-close" aria-label="Close search">✕</button>
+  </div>
+  <div id="search-results" class="search-results" role="listbox" aria-label="Search results"></div>
+</div>
+
+<!-- ─── HERO ──────────────────────────────────────────────── -->
+<main id="main-content">
+<section class="hero" aria-label="Welcome to Foods Carnival">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+
+  <!-- Floating decoration -->
+  <div class="hero-floats" aria-hidden="true">
+    <span class="float-item">🍕</span>
+    <span class="float-item">🍔</span>
+    <span class="float-item">🌯</span>
+    <span class="float-item">🍗</span>
+    <span class="float-item">🍟</span>
+    <span class="float-item">🥙</span>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <span>🛵</span> Free Delivery · 3 KM Radius
+    </div>
+    <h1 class="hero-title">
+      FOODS<span class="hero-title-accent">CARNIVAL</span>
+    </h1>
+    <p class="hero-tagline">Fast Food &amp; Refreshment Point · Wah Cantt</p>
+
+    <div class="hero-info-row" role="list">
+      <div class="hero-info-chip" role="listitem">
+        <span class="chip-icon" aria-hidden="true">📍</span>
+        <span>Laiq Ali Chowk, Wah Cantt</span>
+      </div>
+      <div class="hero-info-chip" role="listitem">
+        <span class="chip-icon" aria-hidden="true">📞</span>
+        <a href="tel:+923164640160" aria-label="Call 0316-4640160">0316-4640160</a>
+      </div>
+      <div class="hero-info-chip" role="listitem">
+        <span class="chip-icon" aria-hidden="true">⏰</span>
+        <span>Open Daily</span>
+      </div>
+    </div>
+
+    <div class="hero-cta-row">
+      <button id="hero-order-btn" class="btn-primary" aria-label="Order food now">
+        🍽️ Order Now
+      </button>
+      <button id="hero-deals-btn" class="btn-secondary" aria-label="View today's deals">
+        🎉 View Deals
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ─── DEALS SECTION ─────────────────────────────────────── -->
+<section id="deals-section" class="section" aria-labelledby="deals-title">
+  <div class="section-header">
+    <p class="section-eyebrow" aria-hidden="true">Limited Time</p>
+    <h2 class="section-title" id="deals-title">Today's <span>Best Deals</span></h2>
+    <p class="section-desc">Handpicked combos at unbeatable prices. Perfect for any appetite.</p>
+  </div>
+
+  <div class="deals-filter" role="group" aria-label="Filter deals">
+    <button class="deals-filter-btn active" data-filter="all" aria-pressed="true">All Deals</button>
+    <button class="deals-filter-btn" data-filter="popular" aria-pressed="false">🔥 Popular</button>
+    <button class="deals-filter-btn" data-filter="budget" aria-pressed="false">💰 Budget</button>
+    <button class="deals-filter-btn" data-filter="family" aria-pressed="false">👨‍👩‍👧‍👦 Family</button>
+  </div>
+
+  <div id="deals-grid" class="deals-grid" role="list" aria-label="Available deals"></div>
+</section>
+
+<!-- ─── MENU SECTION ──────────────────────────────────────── -->
+<section id="menu-section" class="section" aria-labelledby="menu-title">
+  <div class="section-header">
+    <p class="section-eyebrow" aria-hidden="true">Full Menu</p>
+    <h2 class="section-title" id="menu-title">Our <span>Menu</span></h2>
+    <p class="section-desc">From crispy pizzas to juicy burgers — made fresh, served fast.</p>
+  </div>
+
+  <!-- Sticky Category Nav -->
+  <nav class="category-nav-wrap" aria-label="Menu categories">
+    <div id="category-nav" class="category-nav" role="tablist"></div>
+  </nav>
+
+  <!-- Menu content -->
+  <div id="menu-container" aria-label="Menu items"></div>
+</section>
+
+<!-- ─── INFO SECTION ──────────────────────────────────────── -->
+<section id="info-section" class="section" aria-labelledby="info-title">
+  <div class="section-header">
+    <p class="section-eyebrow" aria-hidden="true">Find Us</p>
+    <h2 class="section-title" id="info-title">Contact &amp; <span>Location</span></h2>
+  </div>
+  <div class="info-grid">
+    <div class="info-card">
+      <span class="info-card-icon" aria-hidden="true">📞</span>
+      <div class="info-card-title">Call / WhatsApp</div>
+      <div class="info-card-value">
+        <a href="tel:+923164640160" aria-label="Call 0316-4640160">0316-4640160</a>
+      </div>
+      <div class="info-card-sub">Available for orders &amp; queries</div>
+    </div>
+    <div class="info-card">
+      <span class="info-card-icon" aria-hidden="true">📍</span>
+      <div class="info-card-title">Location</div>
+      <div class="info-card-value">Shop No 7/8 Market Masjid<br/>Ahle Hadees Laiq Ali Chowk<br/>Wah Cantt</div>
+    </div>
+    <div class="info-card">
+      <span class="info-card-icon" aria-hidden="true">📧</span>
+      <div class="info-card-title">Email</div>
+      <div class="info-card-value">
+        <a href="mailto:foodscarnival.wah@gmail.com" aria-label="Email Foods Carnival">foodscarnival.wah<br/>@gmail.com</a>
+      </div>
+    </div>
+    <div class="info-card">
+      <span class="info-card-icon" aria-hidden="true">🛵</span>
+      <div class="info-card-title">Delivery</div>
+      <div class="info-card-value">Free Delivery</div>
+      <div class="info-card-sub">Within 3 KM radius</div>
+    </div>
+    <div class="info-card">
+      <span class="info-card-icon" aria-hidden="true">💬</span>
+      <div class="info-card-title">WhatsApp Order</div>
+      <div class="info-card-value">
+        <a href="https://wa.me/923164640160" target="_blank" rel="noopener noreferrer"
+          aria-label="Order via WhatsApp">Chat with us</a>
+      </div>
+      <div class="info-card-sub">Quick &amp; easy ordering</div>
+    </div>
+    <div class="info-card">
+      <span class="info-card-icon" aria-hidden="true">⏰</span>
+      <div class="info-card-title">Hours</div>
+      <div class="info-card-value">Open Daily</div>
+      <div class="info-card-sub">Lunch &amp; Dinner</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ─── FOOTER ─────────────────────────────────────────────── -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-logo" aria-label="Foods Carnival">FOODS CARNIVAL</div>
+  <p class="footer-tagline">Fast Food &amp; Refreshment Point · Wah Cantt</p>
+  <nav class="footer-links" aria-label="Footer navigation">
+    <a href="#deals-section">Deals</a>
+    <a href="#menu-section">Menu</a>
+    <a href="tel:+923164640160" aria-label="Call us">Call Us</a>
+    <a href="https://wa.me/923164640160" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WhatsApp</a>
+    <a href="mailto:foodscarnival.wah@gmail.com" aria-label="Email us">Email</a>
+    <a href="#info-section">Location</a>
+  </nav>
+  <p class="footer-copy">
+    © 2025 Foods Carnival · Shop 7/8, Laiq Ali Chowk, Wah Cantt · Ph: 0316-4640160
+  </p>
+</footer>
+
+<!-- ─── CART OVERLAY & DRAWER ─────────────────────────────── -->
+<div id="cart-overlay" class="cart-overlay" role="presentation" aria-hidden="true"></div>
+
+<aside id="cart-drawer" class="cart-drawer" role="dialog" aria-modal="true" aria-label="Your order cart">
+  <div class="cart-drawer-header">
+    <h2 class="cart-drawer-title">
+      <span aria-hidden="true">🛒</span>
+      Your Order
+      <span class="cart-item-count-label" id="cart-item-label" aria-live="polite"></span>
+    </h2>
+    <button id="cart-close" class="cart-close" aria-label="Close cart">✕</button>
+  </div>
+
+  <!-- Cart Items -->
+  <div id="cart-items" class="cart-items" role="list" aria-label="Cart items" aria-live="polite"></div>
+
+  <!-- Empty state -->
+  <div id="cart-empty" class="cart-empty" aria-live="polite">
+    <div class="cart-empty-icon" aria-hidden="true">🛒</div>
+    <h3>Your cart is empty</h3>
+    <p>Add some delicious items from our menu!</p>
+  </div>
+
+  <!-- Customer Info Form -->
+  <div id="cart-form-wrap" class="cart-form-wrap hidden">
+    <p class="form-section-label">Delivery Details</p>
+    <div class="form-group">
+      <label for="cust-name">Your Name <span aria-hidden="true">*</span></label>
+      <input type="text" id="cust-name" class="form-control" placeholder="e.g. Ali Khan"
+        required autocomplete="name" aria-required="true" />
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="cust-phone">Phone / WhatsApp <span aria-hidden="true">*</span></label>
+        <input type="tel" id="cust-phone" class="form-control" placeholder="0300-0000000"
+          required autocomplete="tel" aria-required="true" inputmode="tel" />
+      </div>
+      <div class="form-group">
+        <label for="cust-orderType">Order Type</label>
+        <select id="cust-orderType" class="form-control" aria-label="Select order type">
+          <option value="delivery">🛵 Delivery</option>
+          <option value="pickup">🏪 Pickup</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="cust-address">Delivery Address <span aria-hidden="true">*</span></label>
+      <input type="text" id="cust-address" class="form-control"
+        placeholder="House #, Street, Area, Wah Cantt"
+        autocomplete="street-address" aria-required="true" />
+    </div>
+    <div class="form-group">
+      <label for="cust-notes">Special Instructions (optional)</label>
+      <textarea id="cust-notes" class="form-control" rows="2"
+        placeholder="Extra spicy? No onions? Let us know…"></textarea>
+    </div>
+  </div>
+
+  <!-- Bill Summary -->
+  <div id="cart-summary" class="cart-summary hidden" aria-label="Order bill summary" aria-live="polite"></div>
+
+  <!-- Checkout Buttons -->
+  <div class="cart-summary" style="padding-top:0;border-top:none;" id="cart-cta-wrap">
+    <button id="btn-checkout" class="btn-checkout" disabled
+      aria-label="Place order via WhatsApp and Email">
+      <span aria-hidden="true">✅</span> Place Order
+    </button>
+    <button id="btn-whatsapp" class="btn-whatsapp" disabled
+      aria-label="Order via WhatsApp only">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M12.004 2.003C6.477 2.003 2.003 6.477 2.003 12c0 1.784.468 3.454 1.284 4.897L2 22.003l5.234-1.268A9.956 9.956 0 0 0 12.004 22c5.523 0 9.997-4.477 9.997-9.997 0-5.523-4.474-9.997-9.997-10z"/>
+      </svg>
+      WhatsApp Order
+    </button>
+  </div>
+</aside>
+
+<!-- ─── SUCCESS MODAL ──────────────────────────────────────── -->
+<div id="success-modal-overlay" class="modal-overlay" role="dialog"
+  aria-modal="true" aria-labelledby="success-modal-title">
+  <div class="modal">
+    <div class="modal-icon" aria-hidden="true">🎉</div>
+    <h2 class="modal-title" id="success-modal-title">Order Placed!</h2>
+    <p class="modal-desc">
+      Your order has been sent to us via WhatsApp &amp; Email.<br/>
+      We'll confirm it shortly.<br/>
+      <strong>📞 0316-4640160</strong>
+    </p>
+    <div class="modal-actions">
+      <button id="modal-new-order-btn" class="btn-primary" aria-label="Place a new order">
+        🍽️ New Order
+      </button>
+      <button id="modal-close-btn" class="btn-secondary" aria-label="Close">
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ─── TOAST CONTAINER ───────────────────────────────────── -->
+<div id="toast-container" class="toast-container" role="status" aria-live="polite" aria-atomic="true"></div>
+
+<!-- ─── SCRIPTS ────────────────────────────────────────────── -->
+<!-- Data first, then app -->
+<script src="data.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
